@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.UUIDField(default=uuid.uuid4, primary_key=True, serialize=False)),
                 ('user', models.CharField(max_length=100)),
-                ('image', models.ImageField(upload_to='post_images')),
+                ('image', models.ImageField(upload_to='post_pictures')),
                 ('caption', models.TextField()),
                 ('created_at', models.DateTimeField(default=datetime.datetime.now)),
                 ('no_of_likes', models.IntegerField(default=0)),
